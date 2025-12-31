@@ -20,6 +20,6 @@ jobs:
           organization: 'testing_redocly'
           project: 'bartek-lukasz-phronesis'
           mountPath: 'products/api-hub/learning'
-          files: 'learning.yaml'
+          files: 'learning.yaml get-started.md'
         env:
           REDOCLY_AUTHORIZATION: ${{ secrets.REDOCLY_API_KEY }}
