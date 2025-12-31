@@ -315,21 +315,26 @@ components:
             description: Problem Details JSON Object [[RFC7807](https://tools.ietf.org/html/rfc7807)].
             properties:
               type:
+                example: https://tools.ietf.org/html/rfc3986
                 type: string
                 description: URI reference [[RFC3986](https://tools.ietf.org/html/rfc3986)] that identifies the problem type. It should provide human-readable documentation for the problem type. When this member is not present, its value is assumed to be "about:blank".
                 format: uri
               title:
+                example: The problem summary
                 type: string
                 description: Short, human-readable summary of the problem type. It SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.
               status:
+                example: 404
                 type: integer
                 description: HTTP status code.
                 minimum: 400
                 maximum: 599
               detail:
+                example: Problem details
                 type: string
                 description: Human-readable explanation specific to this occurrence of the problem.
               instance:
+                example: https://tools.ietf.org/html/rfc3986
                 type: string
                 description: URI reference that identifies the specific occurrence of the problem.  It may or may not yield further information if dereferenced.
   securitySchemes:
@@ -710,10 +715,13 @@ components:
           examples:
             - usr_abc123
         badgesCount:
+          example: 1
           type: integer
         assignments:
+          example: 1
           type: integer
         activity:
+          example: 1
           type: integer
       additionalProperties: false
     summaryReport:
